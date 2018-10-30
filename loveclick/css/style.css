@@ -8,7 +8,7 @@
   svg.like {
     position: fixed;
     z-index: 10;
-    top: calc(50vh - -630px);
+    top: calc(50vh - -450px);
     left: calc(50vw - 110px);
     border-radius: 100%;
     -webkit-transform: scale(0.3);
@@ -23,16 +23,16 @@
   
   svg.fly {
     position: fixed;
-    top: calc(50vh - -733px);
-    left: calc(50vw - 10px);
+    top: calc(50vh - -550px);
+    left: calc(50vw - -5px);
     fill: #18FFFF;
   }
   
   svg.h {
     position: fixed;
     z-index: 8;
-    top: calc(50vh - -772px);
-    left: calc(50vw - 5px);
+    top: calc(50vh - -600px);
+    left: calc(50vw - -1px);
     fill: #fbff00;
   }
   svg.h.h-5, svg.h.h-6, svg.h.h-7, svg.h.h-8 {
@@ -46,8 +46,8 @@
     position: fixed;
     z-index: 9;
     border-radius: 100%;
-    top: calc(50vh - -772px);
-    left: calc(50vw - 8px);
+    top: calc(50vh - -600px);
+    left: calc(50vw - -1px);
   }
   div.dot:before {
     content: "";
