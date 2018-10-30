@@ -5,6 +5,7 @@
     <link rel="shortcut icon" href="img/dacui.jpg" type="image/x-icon" />
     <title>大翠生日快乐!</title>     
     <link type="text/css" rel="stylesheet" href="./css/love/css/default.css">
+    <link rel="stylesheet" href="./loveclick/css/style.css">
     <script type="text/javascript" src="./css/love/css/jquery.min.js"></script>
     <script type="text/javascript" src="./css/love/css/jscex.min.js"></script>
     <script type="text/javascript" src="./css/love/css/jscex-parser.js"></script>
@@ -38,24 +39,44 @@
       </div>
                 </div>
                 <div id="clock-box">
-                    <!-- <span class="STYLE1"></span><font color="#33CC00">距离我喜欢你，</font>
-<span class="STYLE1">已经是……</span> -->
 <span class="STYLE1"></span>
 <font color="#33CC00"></font>
 <span class="STYLE1"></span>
-                  <!-- <div id="clock"></div> -->
               </div>
                 <canvas id="canvas" width="1100" height="680"></canvas>
             </div>
-            <!-- <div class="clickMore">
-                <span>放个烟花</span>
-            </div> -->
+            <div class="loveClick">
+                <svg height="320" width="320" class="like" onclick="document.body.classList.toggle('liked')">
+                    <!-- <path class="path" d="M 160 145 c 15 -90 170 -20 0 90 m 0 -90 c -15 -90 -170 -20 0 90" fill="white"> -->
+                </svg>
+                
+                <!-- DECORATIONS (quite a lot of them) -->
+                <div class="dot dot-1"></div>
+                <div class="dot dot-2"></div>
+                <div class="dot dot-3"></div>
+                <div class="dot dot-4"></div>
+                <div class="dot dot-5"></div>
+                <div class="dot dot-6"></div>
+                <div class="dot dot-7"></div>
+                <div class="dot dot-8"></div>
+                
+                <svg height="40" width="40" viewBox="0 0 320 320" class="h h-1"><path class="path" d="M 160 145 c 15 -90 170 -20 0 90 m 0 -90 c -15 -90 -170 -20 0 90"></svg>
+                <svg height="40" width="40" viewBox="0 0 320 320" class="h h-2"><path class="path" d="M 160 145 c 15 -90 170 -20 0 90 m 0 -90 c -15 -90 -170 -20 0 90"></svg>
+                <svg height="40" width="40" viewBox="0 0 320 320" class="h h-3"><path class="path" d="M 160 145 c 15 -90 170 -20 0 90 m 0 -90 c -15 -90 -170 -20 0 90"></svg>
+                <svg height="40" width="40" viewBox="0 0 320 320" class="h h-4"><path class="path" d="M 160 145 c 15 -90 170 -20 0 90 m 0 -90 c -15 -90 -170 -20 0 90"></svg>
+                
+                <svg height="40" width="40" viewBox="0 0 320 320" class="h h-5"><path class="path" d="M 160 145 c 15 -90 170 -20 0 90 m 0 -90 c -15 -90 -170 -20 0 90"></svg>
+                <svg height="40" width="40" viewBox="0 0 320 320" class="h h-6"><path class="path" d="M 160 145 c 15 -90 170 -20 0 90 m 0 -90 c -15 -90 -170 -20 0 90"></svg>
+                <svg height="40" width="40" viewBox="0 0 320 320" class="h h-7"><path class="path" d="M 160 145 c 15 -90 170 -20 0 90 m 0 -90 c -15 -90 -170 -20 0 90"></svg>
+                <svg height="40" width="40" viewBox="0 0 320 320" class="h h-8"><path class="path" d="M 160 145 c 15 -90 170 -20 0 90 m 0 -90 c -15 -90 -170 -20 0 90"></svg>
+                
+                <svg height="110" width="110" viewBox="0 0 320 320" class="fly fly-1"><path class="path" d="M 160 145 c 15 -90 170 -20 0 90 m 0 -90 c -15 -90 -170 -20 0 90"></svg>
+                <svg height="110" width="110" viewBox="0 0 320 320" class="fly fly-2"><path class="path" d="M 160 145 c 15 -90 170 -20 0 90 m 0 -90 c -15 -90 -170 -20 0 90"></svg>
+            </div>
             
         </div>
     
-    <script>
-    </script>
-
+    <script src="./loveclick/js/index.js"></script>
     <script>
     (function(){
         var canvas = $('#canvas');

@@ -175,15 +175,15 @@ body {
   0% {color: #ff80c0}
   25% {color: #62b0ff}
   50% {color: #dce833}
-  75% {color: #ff7c3e}
-  100% {color: aquamarine;}
+  75% {color: #00ff00}
+  100% {color: #ff0000}
 }
 @-webkit-keyframes wordOne {
   0% {color: #ff80c0}
   25% {color: #62b0ff}
   50% {color: #dce833}
-  75% {color: #ff7c3e}
-  100% {color: aquamarine;}
+  75% {color: #00ff00}
+  100% {color: #ff0000}
 }
 @keyframes wordTwo {
   from {color: #ff80c0}
@@ -209,25 +209,28 @@ body {
 
 
 .textOne {
-  float: left;
+  position: absolute;
+  margin-top: 55%;
 }
 
 .textTwo {
-  float: right;
+  position: absolute;
+  margin-top: 65%;
+  margin-left: 10%;
 }
 
 .textOne span{
   animation: 15s wordOne forwards steps(20);
   font-family: cute_font;
-  font-size: 1.2em;
-  color: aquamarine;
+  font-size: 1.3em;
+  color: #ff0000;
 }
 
 .textTwo span{
   animation: 20s wordTwo infinite steps(20);
   font-family: heart;
   color: blueviolet;
-  font-size: 1.5em;
+  font-size: 1.8em;
 }
 
 .iconButton {
