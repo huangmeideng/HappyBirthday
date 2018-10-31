@@ -271,6 +271,7 @@ body {
   -webkit-animation: rotation 3s linear infinite;
   -o-animation: rotation 3s linear infinite; */
   -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
   animation-name: showDog,rotation;
   animation-duration: 15s,3s;
   animation-timing-function: linear,linear;
@@ -280,4 +281,19 @@ body {
   width: 7em;
   height: 7em;
   border-radius: 3em;
+}
+
+.iconMusic{
+  position: fixed;
+  left: 5%;
+  bottom: 4%;
+  flex-direction: row;
+}
+.iconPre span{
+  font-size: 3em;
+  color: #ff0080;
+}
+.iconNext span{
+  font-size: 3em;
+  color: #ff0080;
 }

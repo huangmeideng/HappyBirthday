@@ -12,7 +12,12 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="./skPlayer/dist/skPlayer.min.js"></script>
     <script src="./js/common.js"></script>
-    <!-- <script src="./js/love_bg.js"></script> -->
+    <style>
+        #skPlayer .skPlayer-play-btn{
+            opacity: 0.4;
+            background-color:hotpink;
+        }
+    </style>
 </head>
 <body>
   <!-- <canvas id="c"></canvas> -->
@@ -177,8 +182,12 @@
         </path>
         <rect x="10" y="475.571" fill="#fefae9" width="180" height="4" />
   </svg>
-  <div id="skPlayer" style="position:fixed;bottom:30%;"></div>
-  <div id="autoDone"style="display:none" onclick="player.play()"></div>
+  <div id="skPlayer" style="position:fixed;bottom:30%;background: transparent;"></div>
+  <!-- <div id="autoDone" style="display:none" onclick="player.play()"></div> -->
+  <div class="iconMusic">
+    <div class="iconfont iconPre" onclick="player.prev()"><span>&#xe62c;</span></div>
+    <div class="iconfont iconNext" onclick="player.next()"><span>&#xe62d;</span></div>
+  </div>
   <div class="iconButton" onclick="locateTo('./love.html')">
     <img class="iconDog" src="./img/dog.jpg" alt="">
   </div>
@@ -223,17 +232,17 @@
             ]
             }
         });
-    setTimeout(function() {
-    // IE
-    if(document.all) {
-        document.getElementById("autoDone").click();
-    }
-    // 其它浏览器
-    else {
-        var e = document.createEvent("MouseEvents");
-        e.initEvent("click", true, true);
-        document.getElementById("autoDone").dispatchEvent(e);
-    }
-}, 1500)
+//     setTimeout(function() {
+//     // IE
+//     if(document.all) {
+//         document.getElementById("autoDone").click();
+//     }
+//     // 其它浏览器
+//     else {
+//         var e = document.createEvent("MouseEvents");
+//         e.initEvent("click", true, true);
+//         document.getElementById("autoDone").dispatchEvent(e);
+//     }
+// }, 5000)
 </script>
 </html>

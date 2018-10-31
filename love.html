@@ -18,7 +18,7 @@
     <script type="text/javascript" src="./js/love.js"></script>
 </head>
     <body>
-      <audio autoplay="autopaly">
+      <audio preload="auto" id="loveAudio">
           <source src="music/就是爱你.mp3" type="audio/mp3" />
       </audio>  
         <div id="main">
@@ -72,6 +72,9 @@
                 
                 <svg height="110" width="110" viewBox="0 0 320 320" class="fly fly-1"><path class="path" d="M 160 145 c 15 -90 170 -20 0 90 m 0 -90 c -15 -90 -170 -20 0 90"></svg>
                 <svg height="110" width="110" viewBox="0 0 320 320" class="fly fly-2"><path class="path" d="M 160 145 c 15 -90 170 -20 0 90 m 0 -90 c -15 -90 -170 -20 0 90"></svg>
+            </div>
+            <div class="loveMusic" onclick="playMusic()">
+                <img src="./img/music.png" alt="">
             </div>
             
         </div>
@@ -131,6 +134,12 @@
         var hold = 1;
 
         canvas.click(function(e) {
+            var audioButton = document.getElementById("loveAudio");
+            if(audioButton.paused) {
+                audioButton.play();
+            } else{
+                audioButton.pause();
+            }
             var offset = canvas.offset(), x, y;
             x = e.pageX - offset.left;
             y = e.pageY - offset.top;

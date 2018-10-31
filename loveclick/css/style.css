@@ -8,31 +8,31 @@
   svg.like {
     position: fixed;
     z-index: 10;
-    top: calc(50vh - -450px);
+    top: calc(50vh - -150px);
     left: calc(50vw - 110px);
     border-radius: 100%;
     -webkit-transform: scale(0.3);
             transform: scale(0.3);
     -webkit-transform-origin: 50% 50%;
             transform-origin: 50% 50%;
-    box-shadow: 0 0 250px rgba(0, 0, 0, 0.4);
-    background: #212121;
+    /* box-shadow: 0 0 250px rgba(0, 0, 0, 0.4); */
+    /* background: #212121; */
     cursor: pointer;
     background-image: url('../../img/avatar.jpg')
   }
   
   svg.fly {
     position: fixed;
-    top: calc(50vh - -550px);
-    left: calc(50vw - -5px);
+    top: calc(50vh - -260px);
+    left: calc(50vw - -4px);
     fill: #18FFFF;
   }
   
   svg.h {
     position: fixed;
     z-index: 8;
-    top: calc(50vh - -600px);
-    left: calc(50vw - -1px);
+    top: calc(50vh - -300px);
+    left: calc(50vw - -27px);
     fill: #fbff00;
   }
   svg.h.h-5, svg.h.h-6, svg.h.h-7, svg.h.h-8 {
@@ -46,8 +46,8 @@
     position: fixed;
     z-index: 9;
     border-radius: 100%;
-    top: calc(50vh - -600px);
-    left: calc(50vw - -1px);
+    top: calc(50vh - -300px);
+    left: calc(50vw - -45px);
   }
   div.dot:before {
     content: "";
@@ -238,5 +238,27 @@
     100% {
       z-index: 11;
     }
+  }
+
+  @-webkit-keyframes rotation{
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+    }
+  @keyframes rotation{
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+  }
+
+  .loveMusic {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    animation: rotation 3s linear infinite;
+    position: absolute;
+    top: 100%;
+    left: 92%;
+  }
+  .loveMusic img{
+    width: 7.5em;
+    height: 7.5em;
   }
   
