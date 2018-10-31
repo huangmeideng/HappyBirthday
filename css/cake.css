@@ -286,7 +286,7 @@ body {
 .iconMusic{
   position: fixed;
   left: 5%;
-  bottom: 4%;
+  bottom: 0%;
   flex-direction: row;
 }
 .iconPre span{
